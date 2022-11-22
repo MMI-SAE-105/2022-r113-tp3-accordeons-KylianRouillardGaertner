@@ -30,7 +30,7 @@
     width: 200px;
     padding: 10px;
     display: block;
-    /* espace entre les éléments */
+    gap: 1em;
 }
 
 /* Sur tous les enfants de figcation */
