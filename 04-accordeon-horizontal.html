@@ -11,8 +11,10 @@
     <h1>Accordéon horizontal</h1>
   </body>
 </html>
-<ul id="accordeon">
-  <li>
+<ul id="accordeon" x-data="{ouvert:1}">
+  <li :class="{
+    'actif':ouvert===1,
+  }" @click="ouvert=1">
     <figure>
       <img src="cover.jpg" alt="cover de l'album d'orelsan la fête est finie" width="102">
       <figcaption>
@@ -21,7 +23,9 @@
       </figcaption>
     </figure>
   </li>
-  <li>
+  <li :class="{
+    'actif':ouvert===2,
+  }" @click="ouvert=2">
     <figure>
       <img src="montagne.jpg" alt="montagne enneigner" width="102">
       <figcaption>
@@ -30,7 +34,9 @@
       </figcaption>
     </figure>
   </li>
-  <li>
+  <li :class="{
+    'actif':ouvert===3,
+  }" @click="ouvert=3">
     <figure>
       <img src="femme.jpeg" alt="tableau de femme regardant devant" width="102">
       <figcaption>
