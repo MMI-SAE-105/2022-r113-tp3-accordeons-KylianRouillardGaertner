@@ -1,0 +1,40 @@
+#accordeon {
+    display: flex;
+    border-style: none;
+    padding: none;
+}
+
+#accordeon li {
+    width: 107px;
+    overflow: hidden;
+    transition: width 0.5s;
+    background-color: #eee;
+    list-style-type: none;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#accordeon li.actif {
+    width: 317px;
+}
+
+#accordeon li figure {
+    margin: none;
+    display: flex;
+    width: 317px;
+}
+
+#accordeon li figure figcaption {
+    width: 200px;
+    padding: 10px;
+    display: block;
+    gap: 2%;
+}
+
+/* Sur tous les enfants de figcation */
+#accordeon li figure figcaption > * {
+    margin: 0;
+    padding: 0;
+}

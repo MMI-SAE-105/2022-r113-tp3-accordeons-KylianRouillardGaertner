@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Accordéon horizontal</title>
+  </head>
+  <body>
+    <h1>Accordéon horizontal</h1>
+  </body>
+</html>
+<ul id="accordeon" x-data="{ouvert:1}">
+  <li :class="{
+    'actif':ouvert===1,
+  }" @click="ouvert=1">
+    <figure>
+      <img src="cover.jpg" alt="cover de l'album d'orelsan la fête est finie" width="102">
+      <figcaption>
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </figcaption>
+    </figure>
+  </li>
+  <li :class="{
+    'actif':ouvert===2,
+  }" @click="ouvert=2">
+    <figure>
+      <img src="montagne.jpg" alt="montagne enneigner" width="102">
+      <figcaption>
+        <h3>Quae, laudantium dolor.</h3>
+        <p>Neque adipisci distinctio tempora unde doloribus.</p>
+      </figcaption>
+    </figure>
+  </li>
+  <li :class="{
+    'actif':ouvert===3,
+  }" @click="ouvert=3">
+    <figure>
+      <img src="femme.jpeg" alt="tableau de femme regardant devant" width="102">
+      <figcaption>
+        <h3>Nobis, modi provident.</h3>
+        <p>Sint deserunt explicabo autem nobis quas.</p>
+      </figcaption>
+    </figure>
+  </li>
+</ul>
