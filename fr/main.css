@@ -16,6 +16,15 @@
     cursor: pointer;
 }
 
+figure {
+    margin: 0 5px;
+}
+
+ul#accordeon {
+    margin: 0;
+    padding: 0 2em;
+}    
+
 #accordeon li.actif {
     width: 317px;
 }
@@ -30,6 +39,7 @@
     width: 200px;
     padding: 10px;
     display: block;
+    justify-content: center;
 }
 
 /* Sur tous les enfants de figcation */
